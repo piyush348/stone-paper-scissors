@@ -32,5 +32,8 @@ app.get("/api/games", async (req, res) => {
   const data = await Game.find();
   res.send(data);
 });
+app.get("/", (req, res) => {
+  res.send("API is working 🚀");
+});
 
 app.listen(5000, () => console.log("Server running"));
