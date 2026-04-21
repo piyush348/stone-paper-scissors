@@ -53,6 +53,7 @@ function App() {
 
     setRound(round + 1);
   };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (round > 6) {
       saveGame();
